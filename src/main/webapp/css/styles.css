@@ -1,0 +1,270 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-family: "Arial";
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+b {
+    font-weight: bold !important;
+}
+
+body {
+    line-height: 1;
+    font-family: "Arial";
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 5px;
+}
+
+a:hover   { color: #00c }  /* user hovers     */
+
+.link {
+    text-decoration: none;
+}
+
+textarea {
+    resize: none;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.leftAlign {
+    text-align: left;
+}
+
+.rightAlign {
+    text-align: right;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.header {
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #3e3838;
+}
+
+body > .container {
+    padding: 60px 15px 0;
+}
+
+#mainContent {
+    margin-bottom: 60px;
+}
+
+.navbar {
+    background-color: #4285f4;
+}
+
+.navbar-nav>li {
+    font-size: 18px;
+}
+
+.footer-text {
+    color: white;
+    text-align: center;
+}
+
+.footer > .container {
+    padding: 10px 15px 0px 15px;
+}
+
+.label {
+    display: inline-block;
+    width: 100px;
+}
+
+.field {
+    margin-top: 10px;
+}
+
+.fieldset {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.float-left {
+    float: left;
+}
+
+.incomes th {
+    color: white;
+    font-weight: bold;
+}
+
+.intro-container {
+    margin-top: 30px;
+}
+
+.intro-footer-warning {
+    margin-top: 40px;
+    border: 1px solid grey;
+    padding: 25px;
+    color: red;
+}
+
+.intro-footer-warning ul {
+    list-style-type: disc;
+}
+
+.intro-p24-info {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.new-income-form-container {
+    margin: 30px auto;
+    display: flex;
+    width: 400px;
+    padding: 15px;
+    border: 1px solid grey;
+}
+
+.new-income-form-label {
+    width: 300px;
+}
+
+.income-import-form-container {
+    margin: 30px auto;
+    display: flex;
+    width: 600px;
+    padding: 15px;
+    border: 1px solid grey;
+}
+
+.new-income-btn-add-container {
+    margin-top: 35px;
+}
+
+.incomes .income-del-btn {
+    color: red;
+}
+
+.incomes thead {
+    background-color: #4285f4;
+}
+
+.incomes-currency-column,
+.incomes-actions-column {
+    width: 100px;
+}
+
+.incomes .input-margin {
+    margin-top: 5px;
+}
+
+.incomes-clear-all-container {
+    justify-content: flex-end;
+}
+
+.acc-book-control-panel {
+    margin: 30px auto;
+    width: 230px;
+    border: 1px solid grey;
+    padding: 15px;
+}
+
+.acc-book-control-panel .acc-book-create-btn {
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+.acc-book thead {
+    background-color: #4285f4;
+}
+
+.acc-book-date-col {
+    width: 100px;
+}
+
+.acc-book-amount-col {
+    width: 120px;
+}
+
+.acc-book-total-col {
+    width: 85px;
+}
