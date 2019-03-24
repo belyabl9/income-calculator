@@ -2,6 +2,18 @@ spring:
   profiles:
     active: dev
 
+incomeCalculator:
+  nbuExchangeRateUri:
+    protocol: https
+    host: bank.gov.ua
+    path: /NBUStatService/v1/statdirectory/exchange
+
+privat24:
+  incomingTransfers:
+    protocol: https
+    host: acp.privatbank.ua
+    path: /api/proxy/transactions
+
 ---
 
 spring:

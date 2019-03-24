@@ -42,13 +42,4 @@ public class Income extends BaseEntity implements Serializable {
     public int hashCode() {
         return Objects.hashCode(getId());
     }
-
-    @Override
-    public String toString() {
-        return "Income{" +
-                "currency=" + currency +
-                ", amount=" + amount +
-                ", date=" + date +
-                '}';
-    }
 }
