@@ -70,7 +70,12 @@
                     <div class="form-group row input-margin">
                         <label class="control-label col-sm-3 new-income-form-label" for="account">Рахунок</label>
                         <div class="col-sm-9">
-                            <input id="account" required name="account" class="form-control" placeholder="Рахунок" autocomplete="off" pattern="[0-9]*">
+                            <select id="account" name="account" class="form-control" required placeholder="Рахунок">
+                                <c:forEach items="${accounts}" var="account">
+                                    <option value="" disabled selected>Оберіть рахунок</option>
+                                    <option value="${account.account}">${account.account} (${account.currency})</option>
+                                </c:forEach>
+                            </select>
                         </div>
                     </div>
                     

@@ -17,6 +17,9 @@
 
             <!-- Links -->
             <ul class="navbar-nav mr-auto">
+                <li class="nav-item ${activeMenuItem eq 'accounts' ? "active" : ""}">
+                    <a class="nav-link" href="/accounts">Рахунки</a>
+                </li>
                 <li class="nav-item ${activeMenuItem eq 'incomes' ? "active" : ""}">
                     <a class="nav-link" href="/incomes">Доходи</a>
                 </li>

@@ -2,6 +2,7 @@ package com.belyabl9.incomecalc.controller;
 
 import com.belyabl9.incomecalc.domain.Currency;
 import com.belyabl9.incomecalc.domain.Income;
+import com.belyabl9.incomecalc.service.BankAccountService;
 import com.belyabl9.incomecalc.service.IncomeService;
 import com.belyabl9.incomecalc.service.importer.IncomingTransferImporterService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,9 @@ public class IncomeController {
     private IncomeService incomeService;
     
     @Autowired
+    private BankAccountService bankAccountService;
+    
+    @Autowired
     private IncomingTransferImporterService importerService;
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
@@ -36,6 +40,7 @@ public class IncomeController {
     public String showIncomes(Model model) {
         List<Income> incomes = incomeService.findAll();
         model.addAttribute("incomes", incomes);
+        model.addAttribute("accounts", bankAccountService.findAll());
 
         return "incomes";
     }
